@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        ul{
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            grid-gap: 10px;
+        }
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            height: 120px;
+            background-color: gray;
+            font-size: 3em;
+            font-weight: bolder;
+        }
+        .other{
+            background-color: rgb(211, 171, 171);
+        }
+        .day_name{
+            background-color: transparent;
+        }
+        .border{
+            border-bottom: 4px solid black;
+            position: relative;
+            top: -67vh;
+            width: 95%;
+            margin: auto;
+        }
+        h1{
+            font-size: 120px;
+            margin-left: 50px;
+            color: rgb(33, 10, 56);
+        }
+        .red{
+            color: rgb(199, 22, 22);
+        }
+        .date{
+            background-color: rgb(54, 54, 54);
+            color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>July</h1>
+        <ul>
+            <li class="day_name">Sun</li>
+            <li class="day_name">Mon</li>
+            <li class="day_name">Tue</li>
+            <li class="day_name">Wed</li>
+            <li class="day_name">Thu</li>
+            <li class="day_name">Fri</li>
+            <li class="day_name">Sat</li>
+            <li class="other">30</li>
+            <li class="other">31</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li class="red">4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li class="red">11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li class="red">18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li class="red">25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li class="date">29</li>
+            <li>30</li>
+            <li class="other">1</li>
+            <li class="other red">2</li>
+            <li class="other">3</li>
+        </ul>
+    </section>
+    <div class="border"></div>
+</body>
+</html>
